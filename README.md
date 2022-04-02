@@ -1,5 +1,5 @@
 # Postman API Alıştırmalarım
- Postman APı (arayüz) test alıştırmalarımı ve projelerimi paylaştığım repodur.
+ Postman API (arayüz) test alıştırmalarımı ve projelerimi paylaştığım repodur.
 
 ## Trello Uygulamasının Arayüzleri Kullanılarak Yaptığım Alıştırma
 Postman aracı ve Trello API kullanılarak ***POST, PUT ve DELETE*** çağrı metotları ile istekler oluşturuldu. [Trello REST API](https://developer.atlassian.com/cloud/trello/rest/api-group-actions/) sitesi üzerinden gerekli Url, parametre, key ve token bilgileri elde edildi. Postman üzerinde yapılan istekler :
