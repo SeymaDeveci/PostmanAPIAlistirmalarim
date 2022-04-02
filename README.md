@@ -61,7 +61,7 @@ Key, token ve baseUrl değişkenleri oluşturuldu. Tests alanına ***Snippets sc
 ![Proje tests sonucu](https://user-images.githubusercontent.com/42176018/161377453-c3f27e37-25d9-49e8-8356-10bc865d900d.png)
 
 ## Otel Rezervasyon Projesi
-Otel Rezervasyon uygulamasının [arayüz dökümanları](http://restful-booker.herokuapp.com/apidoc/index.html) kullanılarak GET, POST, PUT, PATCH ve DEL çağrı metotları ile Postman API testi gerçekleştirildi. 
+Otel Rezervasyon uygulamasının [arayüz dökümanları](http://restful-booker.herokuapp.com/apidoc/index.html) kullanılarak GET, POST, PUT, PATCH ve DELETE çağrı metotları ile Postman API testi gerçekleştirildi. 
 
 Token oluşturma işlemi için body kısmına username ve password bilgileri girildi. (Raw --> JSON formatında)
 
