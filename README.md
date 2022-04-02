@@ -89,6 +89,6 @@ Bütün çağrılar Collection Runner ile koşuldu.
 
 ![Otel Rezervasyon Test Sonucu](https://user-images.githubusercontent.com/42176018/161387888-10222234-dfb3-4461-a5c4-4d219a2c008b.png)
 
-***Newman*** uygulaması ile Postman üzerindeki testlerin koşumunu gerçekleştirdim. (newman run Via JSON link)
+***Newman*** uygulaması ile Postman üzerindeki testlerin koşumunu gerçekleştirdim. (newman run "export edilen postman dosyasının adı")
 
 ![Newman ile test](https://user-images.githubusercontent.com/42176018/161394667-6be9b091-dfcb-481a-9d5b-5fab2bce6d15.png)
