@@ -45,3 +45,5 @@ pm.test("Trello deger kontrolu", function (){
 });
 ```
 Yazdığım testleri koşmak için Collection Runner kısmını çalıştırdım. Postman testi otomatik şekilde koşulmuş oldu.
+
+![Dinamik değişkenler ile test runner](https://user-images.githubusercontent.com/42176018/161377120-de4524a2-0ef8-4d66-b046-b1cdd3ad8e3b.png)
