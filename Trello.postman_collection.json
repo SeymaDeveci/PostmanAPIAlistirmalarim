@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "9c5165a8-d072-4dba-8aa1-244f21d2e515",
+		"name": "Trello",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Pano Olusturma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let response = pm.response.json();\r",
+							"\r",
+							"pm.test(\"Trello deger kontrolu\", function (){\r",
+							"    pm.expect(response.name).is.eql(pm.environment.get(\"panoAdi\"));\r",
+							"    pm.expect(response.closed).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Trello pano olusturma hideVotes alanı false olomalı\", function (){\r",
+							"    pm.expect(response.prefs.hideVotes).to.be.false;\r",
+							"});\r",
+							"\r",
+							"pm.environment.set(\"panoID\", response.id);\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							"pm.environment.set(\"panoAdi\",\"UdemyTrelloTest \" + parseInt(Math.random()*1000));"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{anaUrl}}/1/boards/?key={{key}}&token={{token}}&name={{panoAdi}}",
+					"host": [
+						"{{anaUrl}}"
+					],
+					"path": [
+						"1",
+						"boards",
+						""
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "{{panoAdi}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Liste Olusturma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let response = pm.response.json();\r",
+							"pm.environment.set(\"listID\", response.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{anaUrl}}/1/lists?key={{key}}&token={{token}}&name=Test Aşamaları&idBoard={{panoID}}",
+					"host": [
+						"{{anaUrl}}"
+					],
+					"path": [
+						"1",
+						"lists"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "Test Aşamaları"
+						},
+						{
+							"key": "idBoard",
+							"value": "{{panoID}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kart Olusturma",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"let a = \"test yapılıyor\";\r",
+							"let b = \"test yapılıyo\";\r",
+							"\r",
+							"pm.test(\"a ile b eşittir\", function (){\r",
+							"    pm.expect(a).is.not.eql(b);\r",
+							"})\r",
+							"\r",
+							"let response = pm.response.json();\r",
+							"pm.environment.set(\"kartID\", response.id);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "{{anaUrl}}/1/cards?key={{key}}&token={{token}}&idList={{listID}}&name=Kart 3",
+					"host": [
+						"{{anaUrl}}"
+					],
+					"path": [
+						"1",
+						"cards"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "idList",
+							"value": "{{listID}}"
+						},
+						{
+							"key": "name",
+							"value": "Kart 3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kart Güncelle",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{anaUrl}}/1/cards/:id?key={{key}}&token={{token}}&name=Güncellenen kart",
+					"host": [
+						"{{anaUrl}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						":id"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						},
+						{
+							"key": "name",
+							"value": "Güncellenen kart"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{kartID}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Kart Silme",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{anaUrl}}/1/cards/:id?key={{key}}&token={{token}}",
+					"host": [
+						"{{anaUrl}}"
+					],
+					"path": [
+						"1",
+						"cards",
+						":id"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{key}}"
+						},
+						{
+							"key": "token",
+							"value": "{{token}}"
+						}
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "{{kartID}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
