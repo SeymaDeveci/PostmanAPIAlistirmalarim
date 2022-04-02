@@ -65,7 +65,7 @@ Otel Rezervasyon uygulamasının [arayüz dökümanları](http://restful-booker.
 
 Token oluşturma işlemi için body kısmına username ve password bilgileri girildi. (Raw --> JSON formatında)
 
-Ortam ve global değişkenler oluşturuldu.
+Ortam değişkenleri oluşturuldu.
 ```Javascript
 let response = pm.response.json();
 pm.environment.set("token", response.token);
