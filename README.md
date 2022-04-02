@@ -91,4 +91,4 @@ Bütün çağrılar Collection Runner ile koşuldu.
 
 ***Newman*** uygulaması ile Postman üzerindeki testlerin koşumunu gerçekleştirdim. (newman run Via JSON link)
 
-![Newman ile test koşumu](https://user-images.githubusercontent.com/42176018/161393786-7640f036-2744-48cd-a81a-d1bf843bbb7f.png)
+![Newman ile test](https://user-images.githubusercontent.com/42176018/161394667-6be9b091-dfcb-481a-9d5b-5fab2bce6d15.png)
