@@ -86,4 +86,5 @@ pm.test("totalPrice alanı doğru dönmelidir.", function(){
 });
 ```
 Bütün çağrılar Collection Runner ile koşuldu.
+
 ![Otel Rezervasyon Test Sonucu](https://user-images.githubusercontent.com/42176018/161387888-10222234-dfb3-4461-a5c4-4d219a2c008b.png)
