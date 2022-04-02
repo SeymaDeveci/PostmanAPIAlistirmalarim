@@ -88,3 +88,7 @@ pm.test("totalPrice alanı doğru dönmelidir.", function(){
 Bütün çağrılar Collection Runner ile koşuldu.
 
 ![Otel Rezervasyon Test Sonucu](https://user-images.githubusercontent.com/42176018/161387888-10222234-dfb3-4461-a5c4-4d219a2c008b.png)
+
+***Newman*** uygulaması ile Postman üzerinde yarattığım testlerin koşumunu gerçekleştirdim.
+
+![Newman ile test koşumu](https://user-images.githubusercontent.com/42176018/161393786-7640f036-2744-48cd-a81a-d1bf843bbb7f.png)
