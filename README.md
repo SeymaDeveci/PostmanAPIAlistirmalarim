@@ -45,3 +45,17 @@ pm.test("Trello deger kontrolu", function (){
 });
 ```
 Yazdığım testleri koşmak için Collection Runner kısmını çalıştırdım. Postman testi otomatik şekilde koşulmuş oldu.
+
+![Dinamik değişkenler ile test runner](https://user-images.githubusercontent.com/42176018/161377120-de4524a2-0ef8-4d66-b046-b1cdd3ad8e3b.png)
+
+## Trello API ile Postman Projesi
+Projede yapılan adımlar :
+1. Trello üzerinde Pano oluştur.
+2. Liste oluştur.
+3. Kart oluştur.
+4. Kart üzerine arayüz çağrısı ile Checklist (Kontrol Listesi) oluştur.
+5. Label (Etiket) oluştur.
+
+Key, token ve baseUrl değişkenleri oluşturuldu. Tests alanına ***Snippets scripts Status code:Code is 200*** eklendi. Bütün çağrılar Collection Runner ile koşuldu.
+
+![Proje tests sonucu](https://user-images.githubusercontent.com/42176018/161377453-c3f27e37-25d9-49e8-8356-10bc865d900d.png)
