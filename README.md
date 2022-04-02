@@ -1,4 +1,4 @@
-# PostmanAPIAlistirmalarim
+# Postman API Alıştırmalarım
  Postman APı (arayüz) test alıştırmalarımı ve projelerimi paylaştığım repodur.
 
 ## Trello Uygulamasının Arayüzleri Kullanılarak Yaptığım Alıştırma
