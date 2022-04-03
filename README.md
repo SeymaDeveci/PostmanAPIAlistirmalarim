@@ -101,6 +101,6 @@ Jenkins üzerinde junit bileşenlerini kullanarak test raporları oluşturuldu.
 ```
 newman run "https://api.getpostman.com/collections/18452135-d677faa6-4371-4f9b-92d9-2a0c6246298c?apikey=PMAK-62488d0d87f5200ef9363d87-e802be55e87fc07d02c58317b3e089495c" --environment "https://api.getpostman.com/environments/18452135-4ceea44f-0293-40a5-823e-811d2709c29b?apikey=PMAK-62488d0d87f5200ef9363d87-e802be55e87fc07d02c58317b3e089495c" --reporters cli,junit --reporter-junit-export "newman/otelRezervasyonu.xml"
 ```
-Test raporu daha okunaklı hale getirildi. (Configure > Post-build Actions > Publish JUnit Test Result Report > Test report XMLs : newman/otelRezervasyonu.xml)
+Test raporu daha okunaklı hale getirildi. (Configure > Post-build Actions > Publish JUnit Test Result Report > Test report XMLs : newman/otelRezervasyonu.xml) Negatif test gerçekleştirildi. 
 
 ![Ekran Görüntüsü (323)](https://user-images.githubusercontent.com/42176018/161428760-d6451712-550f-40b7-baa3-7ec94ce5031f.png)
