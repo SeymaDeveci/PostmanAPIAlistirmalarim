@@ -101,7 +101,7 @@ Bütün çağrılar Collection Runner ile koşuldu.
 
 ![Ekran Görüntüsü (320)](https://user-images.githubusercontent.com/42176018/161427734-a6b5be59-470b-4e4b-899c-43f966a7ccd3.png)
 
-Jenkins üzerinde junit bileşenlerini kullanarak test raporları oluşturuldu.
+Jenkins üzerinde [junit](https://github.com/postmanlabs/newman#reporters) bileşenlerini kullanarak test raporları oluşturuldu.
 ```
 newman run "https://api.getpostman.com/collections/uid?apikey=......." --environment "https://api.getpostman.com/environments/uid?apikey=......." --reporters cli,junit --reporter-junit-export "newman/otelRezervasyonu.xml"
 ```
