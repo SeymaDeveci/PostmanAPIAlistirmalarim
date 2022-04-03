@@ -48,6 +48,10 @@ Yazdığım testleri koşmak için Collection Runner kısmını çalıştırdım
 
 ![Dinamik değişkenler ile test runner](https://user-images.githubusercontent.com/42176018/161377120-de4524a2-0ef8-4d66-b046-b1cdd3ad8e3b.png)
 
+Jenkins aracı üzerinde testlerin otomatize koşulması ve junit bileşenleri kullanılarak test raporunun anlaşılır bir şekiklde oluşturulması.
+
+![Ekran Görüntüsü (325)](https://user-images.githubusercontent.com/42176018/161430195-d543c61b-fd6f-4ce6-b6b1-171866f8c118.png)
+
 ## Trello API ile Postman Projesi
 Projede yapılan adımlar :
 1. Trello üzerinde Pano oluştur.
