@@ -92,3 +92,7 @@ Bütün çağrılar Collection Runner ile koşuldu.
 ***Newman*** uygulaması ile [Postman arayüzleri](https://github.com/postmanlabs/newman#using-newman-with-the-postman-api) kullanılarak testlerin koşumunu gerçekleştirildi.
 
 ![postman api kullanarak newman test koşumu](https://user-images.githubusercontent.com/42176018/161396370-41cf93b6-13a8-4554-903a-5429cb1013fe.png)
+
+***Jenkins*** ve Newman ile Postman üzerinde oluşturulan testler koşuldu.
+
+![Ekran Görüntüsü (320)](https://user-images.githubusercontent.com/42176018/161427734-a6b5be59-470b-4e4b-899c-43f966a7ccd3.png)
